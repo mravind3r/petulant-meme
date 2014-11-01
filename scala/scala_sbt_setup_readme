@@ -1,0 +1,72 @@
+created a folder called FileSearcher
+
+cd FileSearcher
+
+inside here created a build.sbt file  which is like th pom.xml of maven , make sure you have the correct version os scala ( shud be same as the one installed) scala --version
+
+next created a folder called project 
+
+cd project
+
+inside project directory created 2 files 
+
+build.properties  -- this file contains the sbt version used to build the project , make sure it is the same as the installed sbt version ( sbt --version)
+
+plugins.sbt  -- here i specify the eclipse plugin
+
+
+
+cd Filesearcher
+
+
+from here run the following command -- > sbt eclipse 
+this will download all the jars etc ( it uses ivy)
+
+
+
+observe the changes  inside filesearcher folder ( tree  here)
+
+
+
+now go to eclipse -- import exsisting projects and naivate to filesearcher and import.
+
+
+
+-- tips 
+
+filesearcher > sbt   (enter)
+
+> test - this will run the tests , exactly like maven
+
+>compile will compile the code
+
+
+to have an interactive system running 
+
+> ~test  makes change sin eclipse ide to code and observe, sbt automatically does everything for you , no need to run -- sbt test  ( like mvn test)
+
+
+-- any libraries you want to add eg: scala test libs etc go into the build.sbt file inside filesearcher project
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
